@@ -1,9 +1,11 @@
 README — Análisis de Clientes y Patrones de Uso — ConnectaTel
 📊 Análisis de Clientes y Patrones de Uso — ConnectaTel    
+
 📌 Descripción del proyecto
 En este proyecto se analiza cómo utilizan los servicios los clientes de ConnectaTel.
 El objetivo es conocer mejor a los clientes, encontrar patrones de uso, agruparlos según sus características y encontrar oportunidades para mejorar los planes y ofertas de la empresa.
 Para realizar el análisis se utilizaron Python y diferentes herramientas para limpiar, analizar y mostrar los datos.
+
 🎯 Objetivos
 Los principales objetivos del proyecto son:
 •	Conocer y entender los datos disponibles.
@@ -29,6 +31,7 @@ Algunas de las variables utilizadas fueron:
 •	duration
 •	length
 •	date
+
 🛠️ Herramientas utilizadas
 •	Python: lenguaje utilizado para realizar el análisis.
 •	Pandas: para organizar, limpiar y analizar los datos.
@@ -37,6 +40,7 @@ Algunas de las variables utilizadas fueron:
 •	Matplotlib: para crear y personalizar gráficos.
 •	Jupyter Notebook: para desarrollar y documentar el análisis.
 •	GitHub: para guardar y compartir el proyecto.
+
 🧹 Limpieza de los datos
 Durante la revisión de los datos se encontraron algunos problemas:
 •	El valor -999 aparecía en la variable age.
@@ -53,6 +57,7 @@ Por ejemplo:
 •	duration tiene aproximadamente 99.93% de valores vacíos en los mensajes, porque un mensaje no tiene duración de llamada.
 •	length tiene aproximadamente 99.93% de valores vacíos en las llamadas, porque una llamada no tiene longitud de mensaje.
 Estos valores no se consideraron errores. Se mantuvieron vacíos porque esa información no aplica al tipo de evento.
+
 👥 Segmentación de clientes
 Para conocer mejor a los clientes, se crearon grupos según su edad y nivel de uso.
 Segmentación por edad
@@ -64,6 +69,7 @@ Segmentación por nivel de uso
 •	Uso medio: menos de 10 llamadas y menos de 10 mensajes.
 •	Alto uso: clientes que no cumplen las condiciones anteriores.
 Esta clasificación permite comparar diferentes tipos de clientes y entender mejor cómo utilizan los servicios.
+
 📈 Análisis de los datos
 Durante el análisis se crearon diferentes gráficos para observar:
 •	La distribución de las edades.
@@ -73,11 +79,13 @@ Durante el análisis se crearon diferentes gráficos para observar:
 •	La cantidad de clientes según su nivel de uso.
 •	La cantidad de clientes según su grupo de edad.
 •	Los valores muy altos o muy bajos mediante gráficos de caja (boxplots).
+
 🔎 Principales resultados
 El análisis mostró que los clientes tienen diferentes niveles de consumo.
 Al separar a los clientes por edad y nivel de uso, es posible identificar diferentes perfiles y entender mejor sus hábitos.
 También se encontraron algunos valores de consumo muy altos o muy bajos. Estos valores no deben eliminarse automáticamente, ya que pueden corresponder a clientes reales que utilizan mucho más el servicio que otros.
 Además, se encontraron valores vacíos en duration y length que están relacionados con el tipo de evento. Estos valores son normales porque no todos los datos aplican a todos los tipos de eventos.
+
 💡 Recomendaciones
 A partir del análisis se proponen las siguientes ideas:
 •	Crear ofertas diferentes según el nivel de consumo de cada cliente.
@@ -86,6 +94,7 @@ A partir del análisis se proponen las siguientes ideas:
 •	Revisar los casos de consumo muy alto para saber si corresponden a clientes con necesidades especiales o a posibles errores en los datos.
 •	Mejorar la forma en que se recopilan y validan los datos para reducir errores.
 •	Realizar este tipo de análisis periódicamente para detectar cambios en el comportamiento de los clientes.
+
 📁 Estructura del proyecto
 connectatel-data-analysis/
 ├README.md
@@ -95,21 +104,15 @@ connectatel-data-analysis/
     ├users_latam.csv
      └ usage.csv
 •	Nota: los archivos de datos pueden omitirse del repositorio si contienen información sensible o si las condiciones del curso no permiten compartirlos.
+
 🚀 Cómo ejecutar el proyecto
 1.	Descargar o clonar este repositorio.
 2.	Abrir el archivo connectatel_analysis.ipynb en Jupyter Notebook o JupyterLab.
 3.	Instalar las librerías necesarias:
 pip install pandas numpy seaborn matplotlib
 4.	Ejecutar las celdas del notebook en orden.
+
 👩‍💻 Autora
 Nini Ramirez
 Proyecto realizado como parte de mi formación en Data Analytics.
 En este proyecto trabajé en diferentes etapas del análisis de datos, incluyendo la limpieza de datos, el análisis exploratorio, la segmentación de clientes y la búsqueda de información que pueda ayudar a tomar mejores decisiones para una empresa.
-
-
-•	Herramientas y librerías principales.
-•	Etapas del análisis.
-•	3–5 hallazgos principales con cifras concretas.
-•	Recomendaciones de negocio derivadas del análisis.
-•	Instrucciones para ejecutar el notebook.
-•	Estructura del repositorio y descripción de los archivos principales.
